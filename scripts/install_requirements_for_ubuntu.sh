@@ -16,7 +16,7 @@ if ! hash java 2>/dev/null; then
   check_install wget
   wget "https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-$JAVA_VERSION%2B$JAVA_BUILD/OpenJDK15U-jdk_x64_linux_hotspot_${JAVA_VERSION}_${JAVA_BUILD}.tar.gz"
   tar xzf "OpenJDK15U-jdk_x64_linux_hotspot_${JAVA_VERSION}_${JAVA_BUILD}.tar.gz"
-  export PATH="$PWD/$JAVA_VERSION2/bin:$PATH"
+  export PATH="$(pwd | sed '/\/$/! s|$|/|')jdk-$JAVA_VERSION2/bin:$PATH"
   java -version 2>/dev/null || ( echo "not found" )
 fi
 
