@@ -16,6 +16,7 @@ import org.apache.hc.core5.http.HttpResponse
 import org.apache.hc.core5.http.Method
 import org.apache.hc.core5.http.io.entity.ByteArrayEntity
 import org.apache.hc.core5.http.io.entity.EntityUtils
+import org.apache.hc.core5.http2.HttpVersionPolicy
 import org.apache.hc.core5.reactor.DefaultConnectingIOReactor
 import java.io.ByteArrayInputStream
 import java.io.Closeable
@@ -35,6 +36,7 @@ class HttpClient : Closeable {
     private val client: CloseableHttpAsyncClient = HttpAsyncClients
         .custom()
         .setConnectionManager(PoolingAsyncClientConnectionManager())
+        .setVersionPolicy(HttpVersionPolicy.FORCE_HTTP_1)
         .build()
 
     init {
