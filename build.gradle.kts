@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.anatawa12"
-version = "1.0"
+version = "1.1"
 
 application {
     mainClass.set("com.anatawa12.bintray2Central.MainKt")
