@@ -9,11 +9,11 @@ First, please install the binary from releases or build yourself and launch the 
 
 You can download latest version here.
 
-If you're a windows user, Please download [bintray2central.zip](https://github.com/anatawa12/bintray2central/releases/download/1.0/bintray2central.app.zip).
+If you're a windows user, Please download [bintray2central.zip](https://github.com/anatawa12/bintray2central/releases/download/1.0/bintray2central.zip).
 
 If you're a mac user, Please download [bintray2central.app.zip](https://github.com/anatawa12/bintray2central/releases/download/1.0/bintray2central.app.zip).
 
-If you're a linux user, Please download [bintray2central.tar.gz](https://github.com/anatawa12/bintray2central/releases/download/1.0/bintray2central.app.zip).
+If you're a linux user, Please download [bintray2central.tar.gz](https://github.com/anatawa12/bintray2central/releases/download/1.0/bintray2central.tar.gz).
 
 ## First way: Download files and upload at once
 
