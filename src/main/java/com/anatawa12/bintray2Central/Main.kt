@@ -5,8 +5,10 @@ import org.bouncycastle.openpgp.PGPUtil
 import org.bouncycastle.openpgp.bc.BcPGPSecretKeyRingCollection
 import org.bouncycastle.openpgp.operator.bc.BcPBESecretKeyDecryptorBuilder
 import org.bouncycastle.openpgp.operator.bc.BcPGPDigestCalculatorProvider
+import java.io.File
 import java.io.FileInputStream
 import java.net.URI
+import java.net.URISyntaxException
 import java.security.Security
 import javax.swing.JFrame
 
@@ -34,7 +36,11 @@ class Repository(
     var pass: String = "",
 ) {
     fun buildURI(): URI {
-        val uri = URI(url)
+        val uri = try {
+            URI(url)
+        } catch (e: URISyntaxException) {
+            File(url).toURI()
+        }
         if (user == "" && pass == "") return uri
         return uri.copy(userInfo = if (pass == "") user else "$user:$pass")
     }
