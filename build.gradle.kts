@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.4.21"
     application
-    id("org.beryx.jlink") version "2.21.0"
+    id("org.beryx.jlink") version "2.23.4"
 }
 
 group = "com.anatawa12"
