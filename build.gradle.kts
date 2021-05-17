@@ -59,7 +59,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.4.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.0-native-mt")
     implementation("org.apache.httpcomponents.client5:httpclient5:5.0.3")
     implementation("org.bouncycastle:bcprov-jdk15on:$bouncycastle_version")
     implementation("org.bouncycastle:bcpg-jdk15on:$bouncycastle_version")
