@@ -51,7 +51,7 @@ jlink {
 }
 
 val ktor_version = "1.5.1"
-val bouncycastle_version = "1.68"
+val bouncycastle_version = "1.69"
 
 repositories {
     mavenCentral()
