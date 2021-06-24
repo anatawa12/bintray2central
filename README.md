@@ -1,5 +1,7 @@
 # Bintray2Central
 
+**Because of bintray's changes, This tool will not be working!**
+
 A tool to download files from Bintray and/or upload files to maven repository.
 
 # How to use
